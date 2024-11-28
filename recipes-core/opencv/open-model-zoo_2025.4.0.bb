@@ -33,7 +33,7 @@ RDEPENDS:${PN} += " \
                    bash \
 "
 
-#COMPATIBLE_HOST = '(x86_64).*-linux'
+COMPATIBLE_HOST = '(x86_64).*-linux'
 COMPATIBLE_HOST:libc-musl = "null"
 
 EXTRA_OECMAKE += " \
