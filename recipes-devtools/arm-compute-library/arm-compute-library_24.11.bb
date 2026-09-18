@@ -21,6 +21,8 @@ SCONS_MAXLINELENGTH = ""
 
 inherit scons
 
+COMPATIBLE_HOST = "(arm.*|aarch64.*|x86_64.*|i.86.*)-linux"
+
 ARM_INSTRUCTION_SET = "arm"
 
 PACKAGECONFIG ?= "cppthreads embed openmp examples tests ${@bb.utils.filter('DISTRO_FEATURES', 'opencl', d)}"
